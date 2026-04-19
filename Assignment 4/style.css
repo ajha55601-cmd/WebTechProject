@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* Navbar */
+nav {
+    background: #0d6efd;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+}
+
+/* Product Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product Card */
+.card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px gray;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Images */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Price */
+.price {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Button */
+button {
+    background: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e65100;
+    transform: scale(1.1);
+}
+
+/* Fake Added Message */
+.added {
+    display: none;
+    color: green;
+    font-weight: bold;
+}
+
+.card:hover .added {
+    display: block;
+}
